@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_SUBJECT, "JustJava order for " + userName);
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.justjava_order_for) + userName);
         intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
 
         if (intent.resolveActivity(getPackageManager()) != null) {
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (quantity == 10) {
 
-            Toast.makeText(this, "You can't have more than 10 cup's of coffee!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.maximum_cup), Toast.LENGTH_SHORT).show();
             return;
         }
         quantity++;
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (quantity == 1) {
 
-            Toast.makeText(this, "You can't have less than 1 cup of coffee!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.minimum_cup), Toast.LENGTH_SHORT).show();
             return;
         }
         quantity--;
@@ -128,12 +128,13 @@ public class MainActivity extends AppCompatActivity {
 
     private String createOrderSummary(String userInput, int price, boolean addWhippedCream, boolean choco){
 
-        String completeText = "Name: " + userInput;
-        completeText += "\nAdd whipped cream for $1? " + addWhippedCream;
-        completeText += "\nAdd chocolate for $2? " + choco;
-        completeText += "\nQuantity: " + quantity;
-        completeText += "\nTotal: $" + price;
-        completeText += "\nThank you!";
+        String completeText = getString(R.string.order_summary_name, userInput);
+        completeText += "\n" + getString(R.string.price_one_cup);
+        completeText += "\n" + getString(R.string.add_whipped_cream) + " " + addWhippedCream;
+        completeText += "\n" + getString(R.string.add_chocolate) + " " + choco;
+        completeText += "\n" + getString(R.string.quantity) + " " + quantity;
+        completeText += "\n" + getString(R.string.total) + price;
+        completeText += "\n" + getString(R.string.thank_you);
 
         return completeText;
     }

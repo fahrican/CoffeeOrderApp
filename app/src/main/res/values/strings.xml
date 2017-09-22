@@ -1,3 +1,20 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <string name="app_name">Just Java</string>
+    <string name="your_name">Your Name</string>
+    <string name="toppings">Toppings</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity">Quantity</string>
+    <string name="order">Order</string>
+    <string name="justjava_order_for">Just Java order for </string>
+    <string name="minimum_cup">You can\'t have less than 1 cup of coffee!</string>
+    <string name="maximum_cup">You can\'t have more than 10 cup\'s of coffee!</string>
+    <string name="order_summary_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="price_one_cup">Price for one cup of coffee $5</string>
+    <string name="add_whipped_cream">Add whipped cream for $1?</string>
+    <string name="add_chocolate">Add chocolate for $2? </string>
+    <string name="total">Total: $</string>
+    <string name="thank_you">Thank You!</string>
+
 </resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="thank_you">Gracias!</string>
+    <string name="toppings">Ingredientes</string>
+    <string name="add_chocolate">Agregar chocolate por $ 2?</string>
+    <string name="add_whipped_cream">Añadir crema batida por $ 1?</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="justjava_order_for">orden para</string>
+    <string name="maximum_cup">No puedes tener más de 10 tazas de café!</string>
+    <string name="minimum_cup">Usted no puede tener menos de 1 taza de café!</string>
+    <string name="order">Orden</string>
+    <string name="price_one_cup">Precio por una taza de café $ 5</string>
+    <string name="quantity">Cantidad</string>
+    <string name="total">"Total: $ "</string>
+    <string name="whipped_cream">Crema batida</string>
+    <string name="your_name">Tu nombre</string>
+</resources>
